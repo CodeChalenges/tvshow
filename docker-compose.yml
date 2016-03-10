@@ -1,0 +1,14 @@
+app:
+  image: rails:4.2.5
+  working_dir: /root/tvshow
+  volumes:
+    - .:/root/tvshow
+  links:
+    - db
+  ports:
+    - "3000:3000"
+
+db:
+  image: postgres
+  ports:
+    - "5432:5432"
