@@ -1,6 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe Show, type: :model do
+  it { should belong_to(:user) }
+
   context "when validating" do
     let(:show){ build_stubbed(:show) }
 
