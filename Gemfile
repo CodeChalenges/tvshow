@@ -13,6 +13,7 @@ end
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.5.0.beta1'
+  gem 'byebug', '~> 8.2.2'
 end
 
 group :test do
