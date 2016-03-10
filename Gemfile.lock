@@ -44,6 +44,7 @@ GEM
       tzinfo (~> 1.1)
     arel (7.0.0)
     builder (3.2.2)
+    byebug (8.2.2)
     concurrent-ruby (1.0.1)
     diff-lcs (1.2.5)
     erubis (2.7.0)
@@ -150,6 +151,7 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers (~> 0.10.0.rc4)
+  byebug (~> 8.2.2)
   factory_girl_rails (~> 4.6)
   listen (~> 3.0.5)
   pg (~> 0.18.4)

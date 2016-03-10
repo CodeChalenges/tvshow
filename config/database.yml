@@ -10,6 +10,8 @@ default: &default
 development:
   <<: *default
   database: tvshow_development
+  host: db
 test:
   <<: *default
   database: tvshow_test
+  host: db
