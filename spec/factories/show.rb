@@ -3,5 +3,6 @@ FactoryGirl.define do
     name "Show"
     schedule DateTime.now
     association :user
+    site { 'www.google.com' }
   end
 end

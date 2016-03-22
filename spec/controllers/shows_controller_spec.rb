@@ -7,8 +7,9 @@ RSpec.describe ShowsController, type: :controller do
     let!(:older_user)    {create(:user_with_shows, created_at: Date.yesterday)}
     let!(:expected_json) {JSON.parse([older_user.shows.last, newer_user.shows.last].to_json)}
 
+    before { get :index }
+
     it 'return last show of each user' do
-      get :index
       expect(json).to match(expected_json)
     end
   end
